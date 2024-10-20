@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Universal/body styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right top, 
+    rgb(55, 65, 81), rgb(17, 24, 39), 
+    rgb(0, 0, 0));
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.container {
+    width: 85%;
+    height: 90%;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(255, 255, 255, 0.521);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.header-a {
+    color: #000;
+}
+
+.header-a:hover {
+    color: #fff;
+}
+
+
+/* Info section styling */
+.info-div {
+    display: flex;
+    margin: 5vh 0;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-size: 2rem;
+}
+
+.image-cropper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-pic {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%; 
+    height: 100%;
+    width: auto;
+}
+
+/* Project section styling */
+.project-div {
+    min-height: 60vh;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.project-section-header {
+    margin-bottom: 5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.project {
+    background: lightgrey;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.card {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-img {
+    margin: 1rem 0;
+    width: 90%;
+    border-radius: 5px;
+}
+
+/* Contact section styling */
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text {
+    padding-bottom: 2rem ;
+}
+
+.contact-text h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.contact-text p {
+    text-align: center;
+}
+
+.contact-links {
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c6c6c6;
+    border-radius: 25%;
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem;
+    color: black;
+}
+
+
+/*  */
+
+
+.line-break {
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, #fff, #000, #fff);
+    margin: 5rem auto;
+    
+}
