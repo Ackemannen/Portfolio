@@ -1,0 +1,298 @@
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Universal/body styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right top, rgb(51 51 51), 
+    rgb(16 16 16));
+    font-family: "DM Sans", sans-serif;
+    color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Info section styling */
+.info-div {
+    display: flex;
+    margin: 5vh 3rem;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-size: 2rem;
+}
+
+.name-text {
+    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: none;
+    font-weight: 900;
+}
+
+.profile-pic {
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 3rem;
+    box-shadow: 10px 5px 5px #000;
+    animation: fadeInAnimation ease 5s;
+}
+
+.info-text {
+    animation: fadeInAnimation ease 5s;
+}
+
+/* Project section styling */
+.project-div {
+    min-height: 60vh;
+    text-align: center;
+    color: #000;
+    background-color: #f5f5f5;
+    margin-top: -45px;
+    margin-bottom: -45px;
+    padding-bottom: 6rem;
+}
+
+.project-section-header {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 3rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.project {
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+    width: 40vw;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(100px); /* slight movement for the fade-in effect */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.card {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    color: #000;
+}
+
+.project.card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-title {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.project-img {
+    margin: 1rem 0;
+    width: 80%;
+    min-height: 32vw;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.project-description {
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    margin-top: 3rem;
+}
+
+.project:hover {
+    background: darkgrey;
+}
+
+.project:hover .project-title{
+    opacity: 0;
+}
+
+.project:hover .project-img{
+    opacity: 0;
+}
+
+.project:hover .project-description{
+    opacity: 1;
+}
+
+/* Contact section styling */
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    opacity: 0;
+    transition: opacity 3s ease-out;
+}
+
+.contact-div.fade-in {
+    opacity: 1;
+}
+
+.contact-text {
+    padding-bottom: 2rem ;
+}
+
+.contact-text h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.contact-text p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact-links {
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c6c6c6;
+    border-radius: 25%;
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem;
+    color: #f5f5f5;
+}
+
+
+/* Styling the half circle div */
+.curve-div {
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+
+/* Adjusting the site for screen size */
+@media (max-width: 1100px) {
+    .project-description {
+        font-size: 1.35rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .info-div {
+        margin: 2rem 1rem;
+        font-size: 1.2rem; /* Decrease font size */
+    }
+
+    .project-section-header {
+        font-size: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* One project per row */
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project {
+        justify-content: center;
+        height: 52vw;
+        width: 70vw;
+    }
+
+    .project-img {
+        width: 80%;
+        min-height: 80%;
+    }
+
+    .project-description {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .profile-pic {
+        height: 180px; /* Smaller profile pic */
+        box-shadow: 6px 3px 5px #000;
+    }
+
+    .contact-text h2 {
+        font-size: 2rem;
+        margin: 0 1rem;
+    }
+
+    .contact-text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-div {
+        flex-direction: column; /* Stack items vertically */
+        margin: 1rem;
+    }
+
+    .project-section-header {
+        font-size: 1.8rem;
+    }
+
+    .profile-pic {
+        height: 150px; /* Even smaller on very small screens */
+        box-shadow: 5px 2px 5px #000;
+    }
+
+    .contact-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-text p {
+        font-size: 1rem;
+    }
+
+    .project-img {
+        width: 75%;
+        padding-top: 1rem;
+    }
+
+    .project {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animations */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
