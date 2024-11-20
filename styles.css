@@ -127,6 +127,13 @@ a {
 
 .project:hover {
     background: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin: 1rem 2rem;
+    }
 }
 
 .project:hover .project-title{
