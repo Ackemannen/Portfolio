@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c081da3d.css",
-    "main.js": "/Portfolio/static/js/main.89005a90.js",
+    "main.js": "/Portfolio/static/js/main.aa71f091.js",
     "static/js/488.2f586731.chunk.js": "/Portfolio/static/js/488.2f586731.chunk.js",
     "static/media/pizza_pic.png": "/Portfolio/static/media/pizza_pic.cc1601889d3a485dab45.png",
+    "static/media/tiktok_pic.png": "/Portfolio/static/media/tiktok_pic.4c8bda5e2ba4ce14be6d.png",
     "static/media/quiz_app_pic.png": "/Portfolio/static/media/quiz_app_pic.0c9cebcdb1adaa1ac658.png",
     "static/media/clicker_game_pic.png": "/Portfolio/static/media/clicker_game_pic.8cd3d4a9897fc63a69af.png",
     "static/media/calculator_pic.png": "/Portfolio/static/media/calculator_pic.2139293a3d9e049d25bf.png",
@@ -14,11 +15,11 @@
     "static/media/To-do_list_pic.png": "/Portfolio/static/media/To-do_list_pic.8a962217e4b7147129eb.png",
     "index.html": "/Portfolio/index.html",
     "main.c081da3d.css.map": "/Portfolio/static/css/main.c081da3d.css.map",
-    "main.89005a90.js.map": "/Portfolio/static/js/main.89005a90.js.map",
+    "main.aa71f091.js.map": "/Portfolio/static/js/main.aa71f091.js.map",
     "488.2f586731.chunk.js.map": "/Portfolio/static/js/488.2f586731.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c081da3d.css",
-    "static/js/main.89005a90.js"
+    "static/js/main.aa71f091.js"
   ]
 }
