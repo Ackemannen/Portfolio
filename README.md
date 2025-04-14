@@ -8,3 +8,7 @@ Welcome to my portfolio website! This is a showcase of my projects, skills, and 
 - **Responsive Design**: Fully responsive and optimized for different screen sizes.
 - **Smooth Navigation**: Includes a navbar for easy navigation between sections.
 - **Contact Section**: Provides links to my social media profiles and email for easy communication.
+
+## Live Demo
+
+You can view the live version of the portfolio here: [Portfolio Website](https://ackemannen.github.io/Portfolio)
