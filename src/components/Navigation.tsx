@@ -21,7 +21,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 hidden md:block ${
         isScrolled
           ? "glass-card !rounded-none backdrop-blur-md bg-background/80 shadow-lg"
           : "bg-transparent"
